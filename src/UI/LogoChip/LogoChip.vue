@@ -24,6 +24,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 8px;
     &__img {
       padding-right: 11px;
 

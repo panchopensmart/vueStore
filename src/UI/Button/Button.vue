@@ -45,7 +45,6 @@ export default {
       'variant',
       'borderColor',
       'label'
-
   ]
 }
 </script>
@@ -53,8 +52,15 @@ export default {
 <style scoped>
 
 .btn:hover {
-  background-color: blue;
-  color: white;
+  transition: background-color 0.3s ease;
+  background-color: #7397F5 !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+.btn:not(:hover){
+  transition: background-color 0.3s ease;
+  background-color: white !important;
 }
 
 .btn:focus {

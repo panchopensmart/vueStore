@@ -1,6 +1,6 @@
 <template>
   <div class="headerContainer">
-    <logo-chip :label="titleLogo"></logo-chip>
+    <logoChip :label="titleLogo"></logoChip>
     <Button
         :variant="VariantCatalogBtn"
         :label="CatalogLabel"
@@ -38,8 +38,11 @@ export default {
 
 <style scoped>
   .headerContainer {
+    max-width: 1720px;
+    height: 72px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto 24px;
   }
 </style>

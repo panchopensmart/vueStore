@@ -29,4 +29,8 @@ export default {
  .menuListBox {
    display: flex;
  }
+
+ .menuListBox nav:not(:last-child) {
+    margin-right: 20px;
+ }
 </style>

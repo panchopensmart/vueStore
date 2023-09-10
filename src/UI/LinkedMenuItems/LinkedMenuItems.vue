@@ -1,5 +1,7 @@
 <template>
-  <nav>{{title.title}}</nav>
+  <nav class="menuItem">
+    <a href="#">{{title.title}}</a>
+  </nav>
 </template>
 
 <script>
@@ -12,5 +14,12 @@ export default {
 </script>
 
 <style scoped>
+  a {
+    text-decoration: none;
+    color: #393939;
+  }
 
+  a:hover {
+    text-decoration: underline;
+  }
 </style>

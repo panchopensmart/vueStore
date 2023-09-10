@@ -21,6 +21,9 @@ export default {
 
 <style scoped>
   .productCard {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-right: -24px;
   }
 </style>

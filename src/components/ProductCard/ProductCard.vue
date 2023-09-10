@@ -33,4 +33,11 @@ export default {
     flex-direction: column;
     max-width: 333px;
   }
+
+  .cardContainer::after {
+    content: "";
+    display: block;
+    padding-bottom: 24px; /* Отступ снизу для каждой карточки */
+  }
+
 </style>

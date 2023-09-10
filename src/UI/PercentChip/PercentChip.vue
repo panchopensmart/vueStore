@@ -12,6 +12,7 @@ export default {
 
 <style scoped>
   .percentChip {
+    font-size: 14px;
     color: white;
     background-color: #7397F5;
     min-width: 48px;
