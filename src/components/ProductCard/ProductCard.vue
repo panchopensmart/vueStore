@@ -1,9 +1,11 @@
 <template>
   <div class="cardContainer">
-    <CardImg :srcImg="product.img"/>
-    <CardDesc :descr="product.desc"/>
-    <ProductPrice/>
-    <BottomNavigator/>
+    <div class="cardContainer__upperBlock">
+      <CardImg :srcImg="product.img" :inStock="product.inStock"/>
+      <CardDesc :descr="product.desc"/>
+      <ProductPrice :inStock="product.inStock"/>
+    </div>
+    <BottomNavigator :inStock="product.inStock"/>
   </div>
 </template>
 
@@ -32,12 +34,7 @@ export default {
     display: flex;
     flex-direction: column;
     max-width: 333px;
-  }
-
-  .cardContainer::after {
-    content: "";
-    display: block;
-    padding-bottom: 24px; /* Отступ снизу для каждой карточки */
+    justify-content: space-between;
   }
 
 </style>

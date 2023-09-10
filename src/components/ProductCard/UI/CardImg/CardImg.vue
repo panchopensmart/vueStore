@@ -1,8 +1,9 @@
 <template>
   <div class="productImg">
     <HitChip/>
-    <img class="productImg__img" :src="srcImg" alt="img">
+    <img class="productImg__img" :src="srcImg" alt="img" :style="customStyles">
     <PercentChip/>
+
   </div>
 </template>
 
@@ -17,8 +18,16 @@ export default {
     PercentChip,
     HitChip
   },
+  computed: {
+    customStyles() {
+      return {
+        opacity: this.inStock ? '100%' : '50%'
+      };
+    },
+  },
   props: [
     'srcImg',
+    'inStock'
   ]
 }
 </script>
@@ -33,8 +42,9 @@ export default {
   align-items: start;
   flex-direction: column;
   margin: 0;
+
   &__img {
-      margin: 0 auto;
+    margin: 0 auto;
 
   }
 }

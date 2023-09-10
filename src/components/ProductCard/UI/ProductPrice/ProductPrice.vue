@@ -1,5 +1,5 @@
 <template>
-  <div class="productPrice">
+  <div class="productPrice" v-if="inStock">
     <div class="productPrice__price">5990 ₽</div>
     <div class="productPrice__oldPrice">5990 ₽</div>
   </div>
@@ -7,7 +7,10 @@
 
 <script>
 export default {
-  name: "ProductPrice"
+  name: "ProductPrice",
+  props: [
+      'inStock'
+  ]
 }
 </script>
 

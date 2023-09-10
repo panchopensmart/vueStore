@@ -1,6 +1,11 @@
 <template>
   <div>
-    <Button :label="123" variant="active"/>
+    <Button :label="
+                  inStock ? 'Купить' : 'Сообщить о поступлении'
+            "
+            variant="active"
+            :inStock="inStock"
+    />
   </div>
 </template>
 
@@ -9,7 +14,15 @@ import Button from "../../../../UI/Button/Button.vue";
 
 export default {
   name: "BottomNavigator",
-  components: {Button}
+  components: {Button},
+  data() {
+    return {
+      isActive: this.inStock ? 'active' : 'disabled'
+    }
+  },
+  props: [
+    'inStock'
+  ]
 }
 </script>
 
