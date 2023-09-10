@@ -1,12 +1,13 @@
 <template>
   <div class="productCard">
-    <ProductCard v-for="product in productList" :product="product"></ProductCard>
+    <ProductCard :key="generateUniqueId" v-for="product in productList" :product="product"></ProductCard>
   </div>
 </template>
 
 <script>
 import ProductCard from "../../components/ProductCard/ProductCard.vue";
 import {fakeData} from "../../fakeDB.js";
+import { v4 as uuidv4 } from 'uuid';
 
 export default {
   name: "ProductList",
@@ -15,7 +16,12 @@ export default {
     return {
       productList: fakeData
     }
-  }
+  },
+  methods: {
+    generateUniqueId() {
+      return uuidv4();
+    },
+  },
 }
 </script>
 

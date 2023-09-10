@@ -1,7 +1,7 @@
 <template>
   <div class="productPrice">
-    <div class="productPrice__price">5990</div>
-    <div class="productPrice__oldPrice">5990</div>
+    <div class="productPrice__price">5990 ₽</div>
+    <div class="productPrice__oldPrice">5990 ₽</div>
   </div>
 </template>
 
@@ -16,6 +16,7 @@ export default {
     display: flex;
     margin-bottom: 16px;
     &__price {
+      font-weight: bold;
       margin-right: 8px;
       font-size: 16px;
     }

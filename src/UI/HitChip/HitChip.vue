@@ -21,11 +21,11 @@ export default {
     justify-content: center;
     align-items: center;
     &__chip{
-      margin-right: 4px;
+      margin-right: 7.33px;
     }
     &__icon {
-      width: 17.49px;
-      height: 17.49px;
+      width: 13.33px;
+      height: 15px;
     }
   }
 </style>
