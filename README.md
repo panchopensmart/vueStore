@@ -12,8 +12,6 @@
    5) `.` - разделение точкой после доменного имени
    6) `[^\s]*` - любая последовательность в которой кроме пробела
 5) `text` будет равен `Сообщение`. Потому что переменная объявлена в глобальном контексте var
-6) 
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+6) [Решение](https://github.com/panchopensmart/vueStore/blob/main/task6.js)
+7) 
+<hr>
