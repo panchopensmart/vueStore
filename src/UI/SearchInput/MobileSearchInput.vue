@@ -25,6 +25,7 @@ export default {
   display: flex;
   align-items: center;
   margin-left: 16px;
+
   &__input {
     position: relative;
     height: 53px;
@@ -60,6 +61,7 @@ export default {
     display: flex;
     align-items: center;
   }
+
   @media (min-width: 900px) {
     display: none;
   }

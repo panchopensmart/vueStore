@@ -30,16 +30,17 @@ export default {
 </script>
 
 <style scoped>
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 333px;
+  justify-content: space-between;
+}
+
+@media (max-width: 820px) {
   .cardContainer {
-    display: flex;
-    flex-direction: column;
-    max-width: 333px;
-    justify-content: space-between;
+    min-width: 165px;
   }
-  @media (max-width: 820px) {
-    .cardContainer {
-      min-width: 165px;
-    }
-  }
+}
 
 </style>

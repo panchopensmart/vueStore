@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Button from "../../../../UI/Button/Button.vue";
+import Button from "@/UI/Button/Button.vue";
 
 export default {
   name: "BottomNavigator",

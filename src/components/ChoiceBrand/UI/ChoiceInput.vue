@@ -24,8 +24,8 @@ export default {
   &__input-container {
     display: flex;
     align-items: center;
+    width: 100%;
   }
-
 
   &__input {
     border-radius: 4px;
@@ -33,7 +33,7 @@ export default {
     height: 36px;
     border: 1px solid #D5D5D5;
     padding-left: 36px;
-    margin-left: 254px - 270px ; //удалить отступ который возник после padding-left
+    margin-left: 254px - 270px; //удалить отступ который возник после padding-left
   }
 
   &__icon {

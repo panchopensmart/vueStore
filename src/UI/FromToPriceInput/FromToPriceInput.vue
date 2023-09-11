@@ -31,7 +31,7 @@ export default {
     height: 36px - 4.96px;
     border-radius: 5px;
     border: 1px solid #D5D5D5;
-    margin-left: 118px - 129px ; //убрать отступы после определения flex на контейнере
+    margin-left: 118px - 129px; //убрать отступы после определения flex на контейнере
   }
 }
 </style>

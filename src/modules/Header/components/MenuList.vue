@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import LinkedMenuItems from "../../../UI/LinkedMenuItems/LinkedMenuItems.vue";
+import LinkedMenuItems from "@/UI/LinkedMenuItems/LinkedMenuItems.vue";
 
 export default {
   name: "MenuList",
@@ -14,11 +14,11 @@ export default {
   },
   data() {
     return {
-       labelsMenu: [
-         {title: 'Информация о компании', link: '#'},
-         {title: 'Контакты', link: '#'},
-         {title: 'Полезные ссылки', link: '#'},
-       ]
+      labelsMenu: [
+        {title: 'Информация о компании', link: '#'},
+        {title: 'Контакты', link: '#'},
+        {title: 'Полезные ссылки', link: '#'},
+      ]
     }
   }
 
@@ -26,11 +26,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
- .menuListBox {
-   display: flex;
- }
+.menuListBox {
+  display: flex;
+}
 
- .menuListBox nav:not(:last-child) {
-    margin-right: 20px;
- }
+.menuListBox nav:not(:last-child) {
+  margin-right: 20px;
+}
 </style>

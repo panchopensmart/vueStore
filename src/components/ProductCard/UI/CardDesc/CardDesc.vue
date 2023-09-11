@@ -24,6 +24,7 @@ export default {
 <style scoped lang="scss">
 .cardDescr {
   margin-top: 16px;
+
   &__title {
     margin-bottom: 8px;
     color: #AAAAAA;

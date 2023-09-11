@@ -4,7 +4,7 @@
       class="btn"
 
   >
-    {{label}}
+    {{ label }}
   </button>
 </template>
 
@@ -21,14 +21,14 @@ export default {
         border:
             (!this.inStock
                 && this.variant === 'active'
-                && '1px solid #AAAAAA')||
+                && '1px solid #AAAAAA') ||
             (this.variant === 'main' && '1px solid #73AFF4') ||
             (this.variant === 'active' && '1px solid  #7397F5') ||
             (this.variant === 'disabled' && '1px solid  #AAAAAA'),
         color:
             (!this.inStock
                 && this.variant === 'active'
-                && '#AAAAAA')||
+                && '#AAAAAA') ||
             (this.variant === 'main' && 'black') ||
             (this.variant === 'active' && '#7397F5') ||
             (this.variant === 'disabled' && '#AAAAAA'),
@@ -36,20 +36,20 @@ export default {
             (this.variant === 'main' && '48px') ||
             '38px',
         padding:
-            (this.variant === 'main' && '0 24px')||
+            (this.variant === 'main' && '0 24px') ||
             (this.variant === 'active' && '0 12px'),
         width:
-            (this.variant === 'main' && 'auto')||
+            (this.variant === 'main' && 'auto') ||
             (!this.inStock ? '100%' : 'auto')
 
       };
     },
   },
   props: [
-      'variant',
-      'borderColor',
-      'label',
-      'inStock'
+    'variant',
+    'borderColor',
+    'label',
+    'inStock'
   ]
 }
 </script>
@@ -58,6 +58,7 @@ export default {
 .btn {
   font-weight: bold;
 }
+
 .btn:hover {
   transition: background-color 0.3s ease;
   background-color: #7397F5 !important;
@@ -65,7 +66,7 @@ export default {
   cursor: pointer;
 }
 
-.btn:not(:hover){
+.btn:not(:hover) {
   transition: background-color 0.3s ease;
   background-color: white !important;
 }

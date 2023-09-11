@@ -8,8 +8,8 @@
 
 <script>
 
-import PercentChip from "../../../../UI/PercentChip/PercentChip.vue";
-import HitChip from "../../../../UI/HitChip/HitChip.vue";
+import PercentChip from "@/UI/PercentChip/PercentChip.vue";
+import HitChip from "@/UI/HitChip/HitChip.vue";
 
 export default {
   name: "CardImg",

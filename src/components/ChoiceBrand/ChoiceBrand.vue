@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import CheckBox from "../../UI/CheckBox/CheckBox.vue";
+import CheckBox from "@/UI/CheckBox/CheckBox.vue";
 import ChoiceHeader from "./UI/ChoiceHeader.vue";
 import ChoiceInput from "./UI/ChoiceInput.vue";
 import ChoiceList from "./UI/ChoiceList.vue";
@@ -25,7 +25,7 @@ export default {
 
 <style scoped lang="scss">
 .choiceBrand {
-  width: 270px;
+  width: 280px;
 
   &__header {
     display: flex;

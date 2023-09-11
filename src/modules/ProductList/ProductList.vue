@@ -11,7 +11,7 @@
 import ProductCard from "../../components/ProductCard/ProductCard.vue";
 import {fakeData} from "../../fakeDB.js";
 import {v4 as uuidv4} from 'uuid';
-import MobileTitle from "../MobileNameCategory/MobileTitle.vue";
+import MobileTitle from "../../components/MobileNameCategory/MobileTitle.vue";
 export default {
   name: "ProductList",
   components: {ProductCard, MobileTitle},

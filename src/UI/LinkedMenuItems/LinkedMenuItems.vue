@@ -1,6 +1,6 @@
 <template>
   <nav class="menuItem">
-    <a href="#">{{title.title}}</a>
+    <a href="#">{{ title.title }}</a>
   </nav>
 </template>
 
@@ -8,18 +8,18 @@
 export default {
   name: "LinkedMenuItems",
   props: [
-      'title'
+    'title'
   ]
 }
 </script>
 
 <style scoped>
-  a {
-    text-decoration: none;
-    color: #393939;
-  }
+a {
+  text-decoration: none;
+  color: #393939;
+}
 
-  a:hover {
-    text-decoration: underline;
-  }
+a:hover {
+  text-decoration: underline;
+}
 </style>

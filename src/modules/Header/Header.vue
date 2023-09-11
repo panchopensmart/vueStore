@@ -13,11 +13,12 @@
 
 <script>
 import MenuList from "./components/MenuList.vue";
-import LogoChip from "../../UI/LogoChip/LogoChip.vue";
-import Button from "../../UI/Button/Button.vue";
-import SearchInput from "../../UI/SearchInput/SearchInput.vue";
-import LinkedMenuItems from "../../UI/LinkedMenuItems/LinkedMenuItems.vue";
-import MobileSearchInput from "../../UI/SearchInput/MobileSearchInput.vue";
+import LogoChip from "@/UI/LogoChip/LogoChip.vue";
+import Button from "@/UI/Button/Button.vue";
+import SearchInput from "@/UI/SearchInput/SearchInput.vue";
+import LinkedMenuItems from "@/UI/LinkedMenuItems/LinkedMenuItems.vue";
+import MobileSearchInput from "@/UI/SearchInput/MobileSearchInput.vue";
+
 export default {
   name: "Header",
   components: {
@@ -39,18 +40,18 @@ export default {
 </script>
 
 <style scoped>
-  .headerContainer {
-    max-width: 1720px;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto 24px;
-  }
+.headerContainer {
+  max-width: 1720px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 24px;
+}
 
-  @media (max-width: 900px) {
-    .headerContainer {
-      display: none;
-    }
+@media (max-width: 900px) {
+  .headerContainer {
+    display: none;
   }
+}
 </style>

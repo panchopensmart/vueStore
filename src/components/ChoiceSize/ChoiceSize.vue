@@ -7,6 +7,7 @@
 
 <script>
 import ChoiceList from "../ChoiceBrand/UI/ChoiceList.vue";
+
 export default {
   name: "ChoiceSize",
   components: {
@@ -16,11 +17,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .choiceSize {
-    &__title{
-      display: flex;
-      justify-content: center;
-      font-weight: bold;
-    }
+.choiceSize {
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
   }
+}
 </style>

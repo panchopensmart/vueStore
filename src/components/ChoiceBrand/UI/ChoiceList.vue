@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import CheckBox from "../../../UI/CheckBox/CheckBox.vue";
+import CheckBox from "@/UI/CheckBox/CheckBox.vue";
 
 export default {
   name: "ChoiceList",

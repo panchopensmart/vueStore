@@ -12,21 +12,22 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .choiceBrand {
-    &__brand-title {
-      font-weight: bold;
-    }
-    &__header {
-      display: flex;
-      margin-bottom: 16px;
-      height: 20px;
-      align-items: flex-end;
-    }
-
-    &__clearBtn {
-      font-size: 12px;
-      text-decoration: underline;
-      color: #AAAAAA;
-    }
+.choiceBrand {
+  &__brand-title {
+    font-weight: bold;
   }
+
+  &__header {
+    display: flex;
+    margin-bottom: 16px;
+    height: 20px;
+    align-items: flex-end;
+  }
+
+  &__clearBtn {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #AAAAAA;
+  }
+}
 </style>

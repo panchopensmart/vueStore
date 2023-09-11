@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import FromToPriceInput from "../../UI/FromToPriceInput/FromToPriceInput.vue";
+import FromToPriceInput from "@/UI/FromToPriceInput/FromToPriceInput.vue";
 
 export default {
   name: "FromToPrice",
@@ -26,11 +26,13 @@ export default {
   flex-direction: column;
   align-items: stretch;
   width: 280px;
+
   &__title-price {
     display: flex;
     justify-content: center;
     font-weight: bold;
   }
+
   &__between-border {
     color: #D5D5D5;
   }
