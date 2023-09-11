@@ -1,30 +1,28 @@
 <template>
   <div class="featuresContainer">
-    <BreadCrumbs :breadcrumbs="breadcrumbs"/>
+    <CategoryList/>
+    <FromToPrice/>
   </div>
 </template>
 
 <script>
-import BreadCrumbs from "../../components/CategoryList/CategoryList.vue";
+import CategoryList from "../../components/CategoryList/CategoryList.vue";
+import FromToPrice from "../../components/FromToPrice/FromToPrice.vue";
+
 export default {
   name: "ProductFeatures",
   components: {
-    BreadCrumbs
-  },
-  data() {
-    return {
-      breadcrumbs: [
-        { label: 'Главная', url: '/' },
-        { label: 'Категория', url: '/category' },
-        { label: 'Товар', url: '/category/product' },
-      ],
-    };
+    CategoryList,
+    FromToPrice
   },
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .featuresContainer {
     width: 280px;
+    div {
+      margin-bottom: 28px;
+    }
   }
 </style>
