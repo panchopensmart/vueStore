@@ -3,7 +3,6 @@
     <HitChip/>
     <img class="productImg__img" :src="srcImg" alt="img" :style="customStyles">
     <PercentChip/>
-
   </div>
 </template>
 
@@ -35,7 +34,6 @@ export default {
 <style scoped lang="scss">
 
 .productImg {
-  max-width: 333px;
   height: 200px;
   display: flex;
   justify-content: space-between;
@@ -45,7 +43,6 @@ export default {
 
   &__img {
     margin: 0 auto;
-
   }
 }
 </style>

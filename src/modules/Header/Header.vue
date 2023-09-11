@@ -1,4 +1,5 @@
 <template>
+  <MobileSearchInput/>
   <div class="headerContainer">
     <logoChip :label="titleLogo"></logoChip>
     <Button
@@ -16,7 +17,7 @@ import LogoChip from "../../UI/LogoChip/LogoChip.vue";
 import Button from "../../UI/Button/Button.vue";
 import SearchInput from "../../UI/SearchInput/SearchInput.vue";
 import LinkedMenuItems from "../../UI/LinkedMenuItems/LinkedMenuItems.vue";
-
+import MobileSearchInput from "../../UI/SearchInput/MobileSearchInput.vue";
 export default {
   name: "Header",
   components: {
@@ -24,7 +25,8 @@ export default {
     Button,
     SearchInput,
     LinkedMenuItems,
-    MenuList
+    MenuList,
+    MobileSearchInput
   },
   data() {
     return {
@@ -44,5 +46,11 @@ export default {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto 24px;
+  }
+
+  @media (max-width: 900px) {
+    .headerContainer {
+      display: none;
+    }
   }
 </style>

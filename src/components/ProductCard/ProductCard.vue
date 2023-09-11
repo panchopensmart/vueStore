@@ -36,5 +36,10 @@ export default {
     max-width: 333px;
     justify-content: space-between;
   }
+  @media (max-width: 820px) {
+    .cardContainer {
+      min-width: 165px;
+    }
+  }
 
 </style>

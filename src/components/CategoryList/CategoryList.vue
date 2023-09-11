@@ -27,6 +27,7 @@ export default {
 
 <style scoped lang="scss">
 .categoryList {
+  width: 270px;
   @mixin allItems {
     cursor: pointer;
     height: 30px;

@@ -32,5 +32,10 @@ export default {
   &__descr {
     margin-bottom: 16px;
   }
+
+  &__descr:hover {
+    color: #125BAE;
+    cursor: pointer;
+  }
 }
 </style>

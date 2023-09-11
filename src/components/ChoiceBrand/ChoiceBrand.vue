@@ -2,19 +2,7 @@
   <div class="choiceBrand">
     <ChoiceHeader/>
     <ChoiceInput/>
-    <div class="choiceBrand__attrs-list">
-      <ul>
-        <li class="choiceBrand__attrs-item-li">
-          <div class="choiceBrand__attrs-item-div">
-            <div>
-              <CheckBox/>
-              Атрибут
-            </div>
-            <div>3</div>
-          </div>
-        </li>
-      </ul>
-    </div>
+    <ChoiceList/>
   </div>
 </template>
 
@@ -22,13 +10,15 @@
 import CheckBox from "../../UI/CheckBox/CheckBox.vue";
 import ChoiceHeader from "./UI/ChoiceHeader.vue";
 import ChoiceInput from "./UI/ChoiceInput.vue";
+import ChoiceList from "./UI/ChoiceList.vue";
 
 export default {
   name: "ChoiceBrand",
   components: {
     CheckBox,
     ChoiceHeader,
-    ChoiceInput
+    ChoiceInput,
+    ChoiceList
   }
 }
 </script>
@@ -36,6 +26,7 @@ export default {
 <style scoped lang="scss">
 .choiceBrand {
   width: 270px;
+
   &__header {
     display: flex;
     align-items: center;

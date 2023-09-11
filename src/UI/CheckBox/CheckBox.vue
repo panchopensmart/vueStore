@@ -22,6 +22,7 @@ export default {
   -ms-user-select: none;
   user-select: none;
 }
+
 .checkbox.style-c input {
   position: absolute;
   opacity: 0;
@@ -29,18 +30,23 @@ export default {
   height: 0;
   width: 0;
 }
+
 .checkbox.style-c input:checked ~ .checkbox__checkmark {
   background-color: #7397F5;
 }
+
 .checkbox.style-c input:checked ~ .checkbox__checkmark:after {
   opacity: 1;
 }
+
 .checkbox.style-c:hover input ~ .checkbox__checkmark {
   background-color: #D5D5D5;
 }
+
 .checkbox.style-c:hover input:checked ~ .checkbox__checkmark {
   background-color: #7397F5;
 }
+
 .checkbox.style-c .checkbox__checkmark {
   position: absolute;
   top: 2px;
@@ -52,6 +58,7 @@ export default {
   transition: background-color 0.25s ease;
   border-radius: 3px;
 }
+
 .checkbox.style-c .checkbox__checkmark:after {
   content: "";
   position: absolute;
@@ -65,6 +72,7 @@ export default {
   opacity: 0;
   transition: opacity 0.25s ease;
 }
+
 .checkbox.style-c .checkbox__body {
   color: #333;
   line-height: 1.4;
