@@ -1,6 +1,6 @@
 <template>
   <div class="percentChip">
-     <span>20%</span>
+     <span>25%</span>
   </div>
 </template>
 
